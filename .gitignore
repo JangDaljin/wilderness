@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+
+# 개인 도구 인덱스와 로컬 설정
+.codegraph/
+.claude/settings.local.json
+
+# 비밀값
+.env
+.env.*
