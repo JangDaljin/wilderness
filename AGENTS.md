@@ -8,12 +8,16 @@
 ## 구조
 
 - `static/`: 사이트 파일. 이 폴더만 배포된다.
+- `static/fonts/`: 사이트 글꼴과 그 라이선스 파일.
+- `design/<컨셉>/`: 디자인 토큰(`tokens.json`)과 승인된 시안 HTML, 시안용 CSS와 JS. 배포되지 않는다.
 - `.github/workflows/pages.yml`: `main`에 `static/` 변경이 push되면 GitHub Actions로 배포한다.
 - 그 밖의 루트 파일: 에이전트 지침, 저장소 설정, 문서. 배포되지 않는다.
 
 ## 규칙
 
 - 사이트에 보여야 하는 파일은 모두 `static/` 안에 둔다. 루트에 HTML, CSS, JS를 두지 않는다.
+- 디자인 결과물은 `design/`에만 두고 `static/`에 넣지 않는다. 사이트 코드는 `design/` 파일을 불러오지 않는다. 구현할 때는 `design/<컨셉>/tokens.json`의 값을 `static/` 코드로 옮겨 쓴다.
+- 글꼴처럼 라이선스가 있는 외부 리소스를 `static/`에 넣을 때는 원본 라이선스 파일을 옆에 함께 둔다(예: `static/fonts/OFL.txt`).
 - 빌드 도구 없이 브라우저가 바로 읽는 HTML, CSS, JS만 쓴다. 빌드 도구나 패키지 매니저를 들이려면 먼저 사용자에게 묻는다.
 - `static/` 안의 링크와 리소스 경로는 상대 경로로 쓴다. 사이트가 `/wilderness/` 하위 경로에서 열리므로 `/`로 시작하는 절대 경로는 깨진다.
 - `static/` 안의 점(`.`)으로 시작하는 파일과 폴더는 배포되지 않는다.

@@ -8,3 +8,6 @@
 # 비밀값
 .env
 .env.*
+
+# 브라우저 자동화 도구 출력
+.playwright-mcp/

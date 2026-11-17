@@ -1,0 +1,21 @@
+<!doctype html>
+<!-- 광야 컴포넌트 시안. approved: 2026-11-17 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>광야 앱 키</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="wilderness.css">
+</head>
+<body>
+<div class="page">
+<header class="page-head"><h1 class="page-title">앱 키</h1><p class="muted">덱에 꽂히는 키예요. 본체를 누르면 앱이 열리고, 오른쪽 위 i 를 누르면 설명이 나와요. 왼쪽 위에는 상태가 붙어요.</p></header>
+<div class="page-bar"><nav class="page-nav" aria-label="시안 페이지"><a class="nav-link px" href="./">화면</a><a class="nav-link px" href="component-app-key.html" aria-current="page">앱 키</a><a class="nav-link px" href="component-app-info.html">앱 설명</a><a class="nav-link px" href="component-pager.html">쪽 넘김</a></nav></div>
+<section class="section"><h2 class="section-title">상태</h2><div class="specs"><div class="spec"><div class="spec-key" data-render="key" data-app="stars" data-flags=""></div><span class="spec-label">State=Default</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="stars" data-flags="hover tip"></div><span class="spec-label">State=Hover</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="stars" data-flags="pressed"></div><span class="spec-label">State=Pressed</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="stars" data-flags="focus tip"></div><span class="spec-label">State=Focus</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="stars" data-flags="infoHover"></div><span class="spec-label">Info=Hover</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="dice" data-flags=""></div><span class="spec-label">Status=New</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="colors" data-flags=""></div><span class="spec-label">Status=Beta</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="weather" data-flags=""></div><span class="spec-label">Status=Error</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="dice" data-flags="empty"></div><span class="spec-label">State=Empty</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="dice" data-flags="loading"></div><span class="spec-label">State=Loading</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="worst-broken" data-flags=""></div><span class="spec-label">State=IconError</span></div></div></section>
+<section class="section"><h2 class="section-title">설명을 연 키</h2><p class="muted">i 버튼이 강조색으로 바뀌고, 키 테두리도 강조 테두리가 돼요. 말풍선 꼬리는 i 버튼을 가리켜요.</p><div class="specs"><div class="spec"><div class="" data-render="key" data-app="dice" data-flags="infoOpen"></div><span class="spec-label">Info=Open</span></div></div></section>
+<section class="section"><h2 class="section-title">최악의 데이터</h2><p class="muted">이름표는 16em 에서 줄을 바꾸고 잘라내지 않아요. 아이콘을 불러오지 못하면 이름의 첫 글자(글자 단위로 자름)를 보여 줘요.</p><div class="specs"><div class="spec"><div class="spec-key" data-render="key" data-app="worst-long" data-flags="hover tip"></div><span class="spec-label">State=WorstCase 긴 이름</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="worst-one" data-flags="hover tip"></div><span class="spec-label">State=WorstCase 한 글자</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="worst-emoji" data-flags="hover tip"></div><span class="spec-label">State=WorstCase 이모지와 여러 글자</span></div><div class="spec"><div class="spec-key" data-render="key" data-app="worst-broken" data-flags="hover tip"></div><span class="spec-label">State=WorstCase 아이콘 없음</span></div></div></section>
+</div>
+<script src="wilderness.js"></script>
+</body>
+</html>
