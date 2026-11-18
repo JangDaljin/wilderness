@@ -2,12 +2,16 @@
 
 이 저장소는 GitHub Pages로 공개하는 정적 사이트다. 공개(PUBLIC) 저장소이므로 커밋한 파일은 누구나 볼 수 있다.
 
+- 사이트 제목: Daljin's Home. 저장소 이름(wilderness)과 디자인 컨셉 이름(광야)은 화면에 쓰지 않는다.
 - 사이트 주소: https://jangdaljin.github.io/wilderness/
 - 이 파일은 모든 에이전트가 따르는 공통 지침이다.
 
 ## 구조
 
 - `static/`: 사이트 파일. 이 폴더만 배포된다.
+- `static/index.html`: 첫 화면(터미널). 앱 목록은 이 파일의 `[data-apps]` 링크 목록 하나에만 둔다.
+- `static/css/site.css`, `static/js/site.js`: 사이트 공용 스타일과 터미널 스크립트.
+- `static/apps/<이름>/`: 사이트 안에서 여는 앱. 첫 화면에서는 창(iframe)으로 열린다. 앱마다 폴더 하나.
 - `static/fonts/`: 사이트 글꼴과 그 라이선스 파일.
 - `design/<컨셉>/`: 디자인 토큰(`tokens.json`)과 승인된 시안 HTML, 시안용 CSS와 JS. 배포되지 않는다.
 - `.github/workflows/pages.yml`: `main`에 `static/` 변경이 push되면 GitHub Actions로 배포한다.

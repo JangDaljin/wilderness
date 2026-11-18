@@ -2,11 +2,33 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>wilderness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#101B40">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="달진이네 놀이터. 만든 앱을 명령으로 여는 터미널이에요.">
+  <title>Daljin's Home</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Cpath fill='%23101B40' d='M2 0h12v2h2v12h-2v2H2v-2H0V2h2z'/%3E%3Cpath fill='%232DC4B1' d='M4 4h8v8H4z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/site.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/site.js" defer></script>
 </head>
 <body>
-  <h1>wilderness</h1>
-  <p>달진이네 놀이터</p>
+  <div class="term-app" data-term>
+    <header class="gnb">
+      <h1 class="brand" lang="en">Daljin's Home</h1>
+    </header>
+    <main class="term">
+      <!-- 앱 목록. 앱을 더하려면 <li> 하나를 넣는다. 스크립트가 이 목록을 읽어 터미널을 그린다.
+           data-id: 명령 이름(영어 소문자), data-shape: 아이콘(js/site.js 의 SPRITES, 없으면 빈 창),
+           data-status: new(신규), beta(베타), error(오류) 중 하나 또는 비움, data-note: 창에 붙는 안내.
+           다른 사이트 주소는 새 탭으로, 이 사이트 안 주소(apps/<이름>/)는 창으로 열린다. -->
+      <ul class="app-list" data-apps>
+        <li><a href="https://resume.daljin.cloud" data-id="resume" data-shape="note"
+               data-summary="해 온 일과 경력을 정리한 이력서예요.">이력서</a></li>
+        <li><a href="https://github.com/JangDaljin" data-id="github" data-shape="branch"
+               data-summary="이 사이트를 비롯해 만든 것들의 코드가 있어요.">깃허브</a></li>
+      </ul>
+    </main>
+  </div>
 </body>
 </html>
