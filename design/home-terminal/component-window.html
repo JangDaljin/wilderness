@@ -1,0 +1,22 @@
+<!doctype html>
+<!-- Daljin's Home 터미널 시안. approved: 2026-11-17 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>앱 창</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="terminal.css">
+</head>
+<body>
+<div class="page">
+<header class="page-head"><h1 class="page-title">앱 창</h1><p class="muted">이 사이트 안의 앱을 터미널 위에 띄우는 창이에요. 제목줄에는 16px 아이콘, 앱 이름, 닫기 버튼이 있어요.</p></header>
+<nav class="page-nav" aria-label="시안 페이지"><a class="nav-link px" href="./">화면</a><a class="nav-link px" href="component-terminal.html">터미널 줄</a><a class="nav-link px" href="component-window.html" aria-current="page">앱 창</a></nav>
+<section class="section"><h2 class="section-title">창</h2><p class="muted">태블릿과 PC 에서는 최대 480x640 이에요. 여기서는 높이를 반으로 줄여 그렸어요. 시안에서는 앱 화면 대신 앱 설명을 보여 줘요.</p><div class="specs"><div class="spec"><div class="spec-wide" data-render="window" data-app="daltris" data-flags=""></div><span class="spec-label">Type=Floating</span></div></div></section>
+<section class="section"><h2 class="section-title">모바일 창</h2><p class="muted">화면을 꽉 채우고, 제목줄은 노치 아래로 내려요. 닫기 버튼은 터치 기기에서 48px 이에요.</p><div class="frames"><div class="frame-wrap"><span class="muted">Type=Full 모바일 375</span><div class="frame-scroll"><div class="frame frame-mobile"><div data-term data-touch data-open="daltris"></div></div></div></div></div></section>
+<section class="section"><h2 class="section-title">닫기 버튼</h2><div class="specs"><div class="spec"><div class="spec-wide" data-render="window" data-app="daltris" data-flags="hover"></div><span class="spec-label">Close=Hover</span></div><div class="spec"><div class="spec-wide" data-render="window" data-app="daltris" data-flags="pressed"></div><span class="spec-label">Close=Pressed</span></div><div class="spec"><div class="spec-wide" data-render="window" data-app="daltris" data-flags="focus"></div><span class="spec-label">Close=Focus</span></div></div></section>
+<section class="section"><h2 class="section-title">최악의 데이터</h2><p class="muted">이름이 길면 제목줄에서 말줄임하고 마우스를 올리면 전체 이름이 보여요. 내용이 넘치면 창 안에서만 스크롤돼요.</p><div class="specs"><div class="spec"><div class="spec-wide" data-render="window" data-app="seoul-subway-arrival-board" data-flags=""></div><span class="spec-label">State=WorstCase 긴 이름, 긴 설명</span></div><div class="spec"><div class="spec-wide" data-render="window" data-app="x" data-flags=""></div><span class="spec-label">State=WorstCase 한 글자, 설명 없음</span></div><div class="spec"><div class="spec-wide" data-render="window" data-app="dice" data-flags=""></div><span class="spec-label">State=WorstCase 이모지</span></div></div></section>
+</div>
+<script src="terminal.js"></script>
+</body>
+</html>
